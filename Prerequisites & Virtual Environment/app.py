@@ -3,8 +3,8 @@ import streamlit as st
 from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 
-st.set_page_config(page_title="Xcelerate AI Portal", page_icon="🤖", layout="centered")
-st.title("🤖 Xcelerate AI Compliance Portal")
+st.set_page_config(page_title="CloudNex AI Portal", page_icon="🤖", layout="centered")
+st.title("🤖 CloudNex AI Compliance Portal")
 st.caption("Secure, offline corporate policy intelligence engine with real-time streaming")
 st.markdown("---")
 
