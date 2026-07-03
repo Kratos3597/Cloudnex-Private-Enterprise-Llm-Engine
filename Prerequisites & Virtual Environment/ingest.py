@@ -7,7 +7,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaEmbeddings
 
 def run_ingestion():
-    print("[Xcelerate AI] Starting multi-format data ingestion pipeline...")
+    print("[Cloudnex AI] Starting multi-format data ingestion pipeline...")
     base_dir = os.path.dirname(os.path.abspath(__file__))
     knowledge_base_dir = os.path.join(base_dir, "knowledge_base")
     db_storage_dir = os.path.join(base_dir, "db_storage")
@@ -38,7 +38,7 @@ def run_ingestion():
     # Local Vector Database Compiling
     embeddings = OllamaEmbeddings(model="nomic-embed-text") 
     vector_db = Chroma.from_documents(documents=chunks, embedding=embeddings, persist_directory=db_storage_dir)
-    print("[SUCCESS] Xcelerate AI Knowledge Base updated! Ready for local queries.")
+    print("[SUCCESS] Cloudnex AI Knowledge Base updated! Ready for local queries.")
 
 if __name__ == "__main__":
     run_ingestion()
