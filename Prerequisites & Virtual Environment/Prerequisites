@@ -1,0 +1,6 @@
+# Initialize and activate the isolated runtime
+python -m venv venv
+.\venv\Scripts\Activate
+
+# Install specialized core file parsing engines and RAG abstractions
+pip install streamlit langchain-community langchain-ollama chromadb pypdf python-docx openpyxl
