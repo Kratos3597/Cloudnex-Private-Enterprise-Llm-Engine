@@ -1,0 +1,5 @@
+100% Data Sovereignty: Document strings never exit the localized runtime environment.
+
+Fallback Protection: Prompt engineering enforces a zero-knowledge response clause to handle queries unrelated to corporate policies.
+
+Deterministic Configuration: Inference temperature set explicitly to 0.2 to bound creative outputs, emphasizing precise fact retrieval over model imagination.
