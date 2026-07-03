@@ -41,7 +41,7 @@ if vector_db is not None:
             context_text = "\n\n---\n\n".join([doc.page_content for doc in results])
             
             # Ironclad Prompt Guardrails to Prevent Hallucinations
-            system_prompt = f"You are an internal corporate AI assistant for Xcelerate. Answer accurately using ONLY the context provided below. If the answer cannot be found, reply exactly with: 'I cannot find that information in the current compliance documents.'\n\nCONTEXT:\n{context_text}\n\nUSER QUESTION:\n{user_query}\n\nREPLY:\n"
+            system_prompt = f"You are an internal corporate AI assistant for Cloudnex. Answer accurately using ONLY the context provided below. If the answer cannot be found, reply exactly with: 'I cannot find that information in the current compliance documents.'\n\nCONTEXT:\n{context_text}\n\nUSER QUESTION:\n{user_query}\n\nREPLY:\n"
             
             placeholder = st.empty()
             full_response = ""
