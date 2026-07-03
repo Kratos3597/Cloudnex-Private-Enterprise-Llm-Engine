@@ -1,0 +1,11 @@
+PowerShell
+# Step 1: Drop compliance documents into your local directory
+# /knowledge_base/corporate_policy.pdf
+# /knowledge_base/compliance_audit.docx
+# /knowledge_base/financial_metrics.xlsx
+
+# Step 2: Parse, slice, and transform files into database vector vectors
+python ingest.py
+
+# Step 3: Spin up the interactive streaming UI dashboard
+streamlit run app.py
